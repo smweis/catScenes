@@ -82,15 +82,15 @@ function [z,s,exitflag] = smoothn(varargin)
 %   Examples:
 %   --------
 %   %--- Example #1: smooth a curve ---
-%   x = linspace(0,100,2^8);
-%   y = cos(x/10)+(x/50).^2 + randn(size(x))/10;
-%   y([70 75 80]) = [5.5 5 6];
-%   z = smoothn(y); % Regular smoothing
-%   zr = smoothn(y,'robust'); % Robust smoothing
-%   subplot(121), plot(x,y,'r.',x,z,'k','LineWidth',2)
-%   axis square, title('Regular smoothing')
-%   subplot(122), plot(x,y,'r.',x,zr,'k','LineWidth',2)
-%   axis square, title('Robust smoothing')
+%  x = linspace(0,2^8,100);
+%  y = cos(x/10)+(x/50).^2 + randn(size(x))/10;
+%  y([70 75 80]) = [5.5 5 6];
+%  z = smoothn(y); % Regular smoothing
+%  zr = smoothn(y,'robust'); % Robust smoothing
+%  subplot(121), plot(x,y,'r.',x,z,'k','LineWidth',2)
+%  axis square, title('Regular smoothing')
+%  subplot(122), plot(x,y,'r.',x,zr,'k','LineWidth',2)
+%  axis square, title('Robust smoothing')
 %
 %   %--- Example #2: smooth a surface ---
 %   xp = 0:.02:1;
